@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+input {
+  width: 60%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #ff0000;
+  color: white;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.video, .playlist {
+  background: #222;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.video:hover, .playlist:hover {
+  background: #333;
+}
+
+.video img, .playlist img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.channel, .playlist-title {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+#loadMore {
+  display: none;
+}
+
+#playerContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#videoPlayer iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 480px;
+  border: none;
+  border-radius: 8px;
+}
